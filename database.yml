@@ -1,0 +1,5 @@
+---
+database:
+  host: ${CFG_DB_HOST}
+  name: ${CFG_DB_NAME}
+  password: ${CFG_DB_PASSWORD}
