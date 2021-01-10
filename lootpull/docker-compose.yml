@@ -1,0 +1,20 @@
+version: "3"
+# Other docker-compose examples in /examples
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: mc
+    ports:
+      - "25565:25565"
+    volumes:
+      - "./data:/data"
+    environment:
+      EULA: "TRUE"
+      OVERRIDE_SERVER_PROPERTIES: "TRUE"
+      MEMORY: "2G"
+      MAX_MEMORY: "8G"
+      LEVEL: "lootpull"
+      SEED: "-573947210"
+      MODE: "creative"
+    restart: always
